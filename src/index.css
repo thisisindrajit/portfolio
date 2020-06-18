@@ -1,13 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital@0;1&display=swap');
+
+:root
+{
+  --main-color:#FE1A67;
+  --text-colorb:black;
+  --text-colorw:white;
+}
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Barlow', sans-serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  font-size:1.8rem;
+  text-align:center;
+  background-color:rgba(255,255,255);
+  padding:20px;
+  color:#212F3C;
+}
+
+.main
+{
+  position:absolute;
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  box-sizing: border-box;
+  min-width: 100%;
+  min-height:100%;
+  padding:0 20px;
+  margin-bottom:20px;
+  background:linear-gradient(to top, rgba(23, 32, 42, 0.20), rgba(0, 0, 0, 0.80)),url("./wallpaper.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.highlight
+{
+  color:var(--main-color);
+  font-style:italic;
+}
+
+#footer {
+  box-sizing: border-box;
+  position: absolute;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content:center;
+  text-align:center;
+  top:100%;
+  padding:20px;
+  font-size:1.2rem;
+}
+
+#footer span
+{
+  margin:5px;
+  display:flex;
+  align-items: center;
+  justify-content:center;
+}
+
+#footer img {
+  height:25px;
 }
