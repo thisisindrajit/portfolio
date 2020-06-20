@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import MainComponent from './MainComponent';
-import Footer from './Footer';
+import OtherArea from './OtherArea';
 
 ReactDOM.render(
   <React.StrictMode>
     <MainComponent />
-    <Footer />
+    <OtherArea />
   </React.StrictMode>,
   document.getElementById('root')
 );

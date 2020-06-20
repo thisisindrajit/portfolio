@@ -1,11 +1,14 @@
 import React from 'react';
 import {Component} from 'react';
+import bg from "./wallpaper 2.jpg";
 
 class MainComponent extends Component {
     render() {
         return(
             <div className="main">
-                <code>{"<div> Hello! I am Indrajit, a "}<span className="highlight">full stack web developer</span>{" from India. </div>"}</code>
+                <img src={bg} alt="bg"></img>
+                <code>{"<span id='hello'> Hello! I am "}<u>Indrajit</u>{", a "}<span className="highlight">full stack web developer</span>{" from "} <span id="india">
+                    India. </span>{"</span>"}</code>
             </div>
         );
     }
