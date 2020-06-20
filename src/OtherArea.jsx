@@ -1,11 +1,8 @@
 import React from 'react';
-import {Component} from 'react';
 import Footer from './Footer';
 import About from './About';
 
-class OtherArea extends Component {
-    render() 
-    {
+const OtherArea = () => {
         return(
             <div id="otherarea">
                 <span className="label">About Me</span>
@@ -17,6 +14,5 @@ class OtherArea extends Component {
             </div>
         )
     }
-}
 
 export default OtherArea;

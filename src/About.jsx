@@ -1,12 +1,9 @@
 import React from 'react';
-import {Component} from 'react';
 
-class About extends Component {
-    render() {
+const About = () => {
         return(
             <div>This is the about section!</div>
         );
-    }
 }
 
 export default About;
