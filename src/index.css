@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap');
 
 :root
 {
-  --main-color:#FE1A67;
+  --main-color:#76D7C4;
+  --main-color-dark:#2E4053;
   --text-colorb:black;
   --text-colorw:white;
 }
@@ -12,9 +13,12 @@
 body {
   margin: 0;
   font-family: 'Barlow', sans-serif;
+  background-color:#FDFDFD;
+  cursor:default;
 }
 
 code {
+  border-radius:10px;
   font-family: 'Roboto Mono', monospace;
   font-size:1.5rem;
   text-align:center;
@@ -23,19 +27,27 @@ code {
   color:white;
 }
 
+.tag
+{
+  color:#85C1E9;
+  font-style:italic;
+}
+
 .main
 {
   position:absolute;
   display:flex;
+  flex-direction:column;
   align-items: center;
   justify-content:center;
   box-sizing: border-box;
-  min-width: 100%;
-  min-height:100%;
+  width: 100%;
+  height:100%;
   padding:0 20px;
   margin-bottom:20px;
   background:url("./wallpaper 2.jpg");
   background-position: center;
+  background-size:cover;
   overflow: hidden;
 }
 /* 
@@ -50,7 +62,49 @@ code {
   background:linear-gradient(to bottom, orange 0%, white 60%, green 100%);
   -webkit-background-clip: text;
   background-clip: text;
-	-webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.main #socialcards
+{
+  border-radius:10px;
+  background-color:var(--main-color);
+  margin-top:10px;
+  padding:15px 10px;
+  width:fit-content;
+  display:flex;
+  align-items: center;
+  justify-content:space-evenly; 
+}
+
+
+.main #socialcards .card-social
+{
+  border-radius:50%;
+  margin:0 7.5px;
+  display:block;
+  padding:10px;
+  height:40px;
+  width:40px;
+  background-color:white;
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  cursor:pointer;
+  -webkit-box-shadow: 0 3px 8px -2px #2E4053;
+  -moz-box-shadow: 0 3px 8px -2px #2E4053;
+  box-shadow: 0 3px 8px -2px #2E4053;
+  transition:0.2s all ease-in-out;
+}
+
+.main #socialcards .card-social:hover
+{
+  transform:scale(1.2);
+}
+
+.main #socialcards .card-social img
+{
+  height:30px;
 }
 
 .highlight
@@ -71,12 +125,183 @@ code {
 }
 
 #otherarea .label {
-  text-align: center;
-  width:70%;
-  font-size:1.6rem;
-  margin:40px 0;
+  /* text-align: center; */
+  width:90%;
+  font-size:1.7rem;
+  margin:40px 0 20px 0;
   padding-bottom:10px;
   border-bottom:1px solid var(--main-color);
+}
+
+#otherarea #about
+{
+  box-sizing: border-box;
+  width:90%;
+  background:linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,.75)),url("pattern.png");
+  background-size:contain;
+}
+
+#otherarea #about #main-content
+{
+  width:100%;
+  display:flex;
+  align-items:flex-start;
+  justify-content: center;
+  height:fit-content;
+}
+
+#otherarea #about #main-content .imgholder
+{
+  margin-right:10px;
+  border-radius:10px;
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  height:150px;
+  width:150px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 3px 8px -2px #2E4053;
+  -moz-box-shadow: 0 3px 8px -2px #2E4053;
+  box-shadow: 0 3px 8px -2px #2E4053;
+}
+
+#otherarea #about #main-content .imgholder img
+{
+  height:100%;
+}
+
+
+#otherarea #about #main-content .content
+{
+  background-color:white;
+  font-size:1.3rem;
+  border-radius:10px;
+  text-align:justify;
+  display:inline-block;
+  box-sizing:border-box;
+  padding:20px 25px;
+  height:fit-content;
+  box-sizing:border-box;
+  line-height:2.5rem;
+  width:75%;
+  -webkit-box-shadow: 0 3px 8px -2px #2E4053;
+  -moz-box-shadow: 0 3px 8px -2px #2E4053;
+  box-shadow: 0 3px 8px -2px #2E4053;
+}
+
+#otherarea #about #mygrid 
+{
+  text-align:justify;
+  margin:auto;
+  margin-top:20px;
+  width:fit-content;
+  display:grid;
+  grid-template-columns: 1fr auto;
+  grid-column-gap:1rem;
+}
+
+
+#otherarea #about #mygrid #mypic
+{
+  background-color:white;
+  border-radius:10px;
+  width:fit-content;
+  padding-bottom:20px;
+  overflow:hidden;
+  font-size:1.3rem;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  -webkit-box-shadow: 0 3px 8px -2px #2E4053;
+  -moz-box-shadow: 0 3px 8px -2px #2E4053;
+  box-shadow: 0 3px 8px -2px #2E4053;
+}
+
+#otherarea #about #mygrid #mypic img
+{
+  height:255px;
+  margin-bottom:20px;
+}
+
+#otherarea #about #mygrid #mymusic
+{
+  box-sizing: border-box;
+  font-size:1.3rem;
+  padding:20px;
+  border-radius:10px;
+  background-color:var(--main-color);
+  color:white;
+  -webkit-box-shadow: 0 3px 8px -2px #2E4053;
+  -moz-box-shadow: 0 3px 8px -2px #2E4053;
+  box-shadow: 0 3px 8px -2px #2E4053;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content:center;
+}
+
+#otherarea #about #mygrid #mymusic #musicgrid
+{
+  margin-top:25px;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap:1rem;
+  width:fit-content;
+}
+
+#otherarea #about #mygrid #mymusic #musicgrid iframe
+{
+  border-radius:10px;
+  height:12.5rem;
+  width:20rem;
+}
+
+
+#otherarea #skills
+{
+  border-radius:10px;
+  background-color:var(--main-color-dark);
+  color:var(--text-colorw);
+  width:90%;
+  padding:20px;
+  box-sizing: border-box;
+}
+
+#otherarea #skills .skill-tag
+{
+  text-decoration: underline;
+  font-size:1.4rem;
+  color:var(--main-color);
+  margin-bottom:20px;
+}
+
+#otherarea #skills .skillitem
+{
+  width:80%;
+  margin:25px auto;
+  font-size:1.2rem;
+}
+
+#otherarea #skills .skillitem .skillpercentage
+{
+  margin:10px 0;
+  background-color:white;
+  width:100%;
+  height:10px;
+}
+
+#otherarea #skills .skillitem .skillpercentage .percentage
+{
+  height:10px;
+  background-color:var(--main-color);
+}
+
+#otherarea #skills .skillitem .percentage-text
+{
+  color:var(--main-color);
+  position: relative;
+  float: right;
 }
 
 #otherarea #footer {
@@ -103,10 +328,193 @@ code {
   height:25px;
 }
 
+#otherarea #footer #footer-down
+{
+  display:flex;
+  flex-direction: row;
+  margin-top:10px;
+}
+
+#otherarea #footer #copyright
+{
+  font-size:1rem;
+  background-color:var(--main-color);
+  border-radius: 10px;
+  color:white;
+  padding:10px;
+}
+
+#otherarea #footer #sourcecode
+{
+  cursor:pointer;
+  font-size:1rem;
+  background-color:var(--main-color-dark);
+  border-radius: 10px;
+  color:white;
+  padding:10px;
+}
+
+@media screen and (max-width:1300px)
+{
+  #otherarea #about #mygrid #mymusic #musicgrid iframe
+  {
+  height:12rem;
+  width:17.5rem;
+  }
+}
+
+@media screen and (max-width:1200px)
+{
+  #otherarea #about #mygrid 
+  {
+  grid-template-columns:1fr;
+  grid-row-gap:1rem;
+  width:100%;
+  margin:auto;
+  margin-top:20px;
+  }
+
+
+  #otherarea #about #mygrid #mypic
+  {
+  margin:auto;
+  width:fit-content;
+  font-size:1.1rem;
+  }
+
+  #otherarea #about #mygrid #mypic img
+  {
+  height:300px;
+  }
+
+  #otherarea #about #mygrid #mymusic #musicgrid iframe
+  {
+  height:12.5rem;
+  width:18.5rem;
+  }
+
+  #otherarea #about #mygrid #mymusic
+  {
+  margin:auto;
+  width:fit-content;
+  font-size:1.1rem;
+  }
+}
+
 @media screen and (max-width:769px)
 {
   #otherarea .label
   {
     font-size:1.4rem;
+  }
+
+  .main #socialcards .card-social
+  {
+    margin:0 5px;
+    height:30px;
+    width:30px;
+  }
+
+  #otherarea #about #main-content .content
+  {
+  font-size:1.2rem;
+  }
+
+  #otherarea #about #mygrid #mypic
+  {
+  width:100%;
+  }
+
+  #otherarea #about #mygrid #mypic img
+  {
+  height:405px;
+  margin-bottom:20px;
+  }
+
+  #otherarea #about #mygrid #mypic img
+  {
+  height:405px;
+  margin-bottom:20px;
+  }
+
+  #otherarea #about #mygrid #mymusic
+  {
+  width:100%;
+  }
+
+  #otherarea #about #mygrid #mymusic #musicgrid
+  {
+  grid-template-columns: 1fr;
+  grid-row-gap:1rem;
+  }
+
+  #otherarea #about #mygrid #mymusic #musicgrid iframe
+  {
+  height:15rem;
+  width:25rem;
+  }
+
+  #otherarea #skills .skill-tag
+  {
+  font-size:1.3rem;
+  }
+
+  #otherarea #skills .skillitem
+  {
+  width:90%;
+  font-size:1.1rem;
+  }
+
+  #otherarea #footer #footer-down
+  {
+    flex-direction: column;
+  } 
+
+}
+
+@media screen and (max-width:575px)
+{
+  code {
+    font-size:1.4rem;
+  }
+
+  #otherarea #about #main-content
+  {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #otherarea #about #main-content .content
+  {
+    margin-top:20px;
+    width:100%;
+  }
+
+  #otherarea #footer {
+    font-size:1rem;
+  }
+
+  #otherarea #footer img {
+    height:20px;
+  }
+
+  #otherarea #about #mygrid #mymusic #musicgrid iframe
+  {
+  height:12.5rem;
+  width:20rem;
+  }
+}
+
+@media screen and (max-width:475px)
+{
+  #otherarea #about #mygrid #mypic img
+  {
+  height:255px;
+  }
+
+  #otherarea #about #mygrid #mymusic #musicgrid iframe
+  {
+  height:9rem;
+  width:14.5rem;
   }
 }
