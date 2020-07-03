@@ -2,6 +2,7 @@ import React from 'react';
 import Footer from './Footer';
 import About from './About';
 import Skills from './Skills';
+import Extras from './Extras';
 
 const OtherArea = () => {
         return(
@@ -10,7 +11,8 @@ const OtherArea = () => {
                 <About />
                 <span className="label">Skills</span>
                 <Skills />
-                <span className="label">Other Stuff</span>
+                <span className="label">Extras</span>
+                <Extras />
                 <span className="label">My Projects</span>
                 <Footer />
             </div>
