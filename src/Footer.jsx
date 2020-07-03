@@ -1,6 +1,6 @@
 import React from 'react';
 import reactlogo from './react.png'
-import ghlogo from './gh.svg'
+import ghlogo from './github.png'
 
 function gotopage()
 {

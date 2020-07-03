@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './Logo 2.png';
+import logo from './logo.png';
 import mypic from './mypic.jpg';
 
 const About = () => {
