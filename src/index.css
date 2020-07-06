@@ -45,7 +45,7 @@ code {
   justify-content:center;
   box-sizing: border-box;
   width: 100%;
-  height:100%;
+  height:100vh;
   padding:0 20px;
   margin-bottom:20px;
   background:url("./wallpaper.jpg");
@@ -53,12 +53,6 @@ code {
   background-size:cover;
   overflow: hidden;
 }
-/* 
-.main img
-{
-  position: absolute;
-  z-index:-1;
-} */
 
 .main #india
 {
@@ -454,7 +448,7 @@ color:white;
 {
   font-size:1.1rem;
   width:100%;
-  height:160px;
+  height:8rem; /* set height to line-height * no of lines that you want */
   line-height:2rem;
   overflow:hidden;
 }
@@ -469,7 +463,6 @@ color:white;
   float:right; 
   background-color:white;
   color:var(--main-color);
-  border:1px solid var(--main-color);
   padding:5px;
   text-decoration: none;
   transition:all 0.2s ease-in-out;
@@ -484,15 +477,15 @@ color:white;
   content:'GO!';
   background-color:var(--main-color);
   color:white;
-  height:105%;
-  width:0;
-  transition:width 0.2s cubic-bezier(0,0.5,0,1);
+  height:100%;
+  width:0%;
+  transition:width 0.1s cubic-bezier(0,0.5,0,1);
   overflow: hidden;
 }
 
 #otherarea #extras #articlebox #articlegrid .article .link:hover::after
 {
-  width:100%;
+   width:100%;
 }
 
 
@@ -618,8 +611,9 @@ color:white;
 
 #otherarea #fav .colorchange
 {
+  background-color: white;
   color:var(--main-color-dark);
-  background-color:#D1F2EB;
+  border:2px solid var(--main-color);
 }
 
 #otherarea #fav .favsection .favtitle
@@ -633,22 +627,73 @@ color:white;
 #otherarea #fav .favsection .favItem
 {
   margin:20px 0;
-  font-size:1.2rem;
 }
 
-
-#otherarea #fav .favsection .favItem .itemdesc::before
+#otherarea #fav .favsection .favItem .itemtitle
 {
-  content:'';
-  margin-left:30px;
+  display:flex;
+  align-items: flex-start;
+  font-size:1.2rem;
 }
 
 #otherarea #fav .favsection .favItem .itemdesc
 {
   margin-top:2.5px;
+  margin-left:30px;
   display:block;
   font-style:italic;
   font-size:1rem;
+}
+
+#otherarea #connect
+{
+  background:
+  linear-gradient(to bottom, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.6) 100%),
+  url("https://images.pexels.com/photos/373076/pexels-photo-373076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  box-sizing: border-box;
+  margin-top:50px;
+  height:100vh;
+  color:white;
+  background-size:cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  width:100%;
+  padding:20px;
+  display:flex;
+  flex-direction: column;
+}
+
+#otherarea #connect #connecttitle
+{
+  margin:20px auto 0 20px;
+  font-size: 1.6rem;
+  font-style:italic;
+  padding:20px;
+  background-color:var(--main-color);
+  color:white;
+  width:fit-content;
+  -webkit-box-shadow: 0 3px 8px -2px #2E4053;
+  -moz-box-shadow: 0 3px 8px -2px #2E4053;
+  box-shadow: 0 3px 8px -2px #2E4053;
+  transition:0.2s all ease-in-out;
+}
+
+#otherarea #connect #connectcard
+{
+  box-sizing: border-box;
+  font-size:1.2rem;
+  text-align:center;
+  border-radius:10px;
+  background-color:white;
+  color:black;
+  padding:20px;
+  -webkit-box-shadow: 0 3px 8px -2px #2E4053;
+  -moz-box-shadow: 0 3px 8px -2px #2E4053;
+  box-shadow: 0 3px 8px -2px #2E4053;
+  margin:auto;
+  height:60%;
+  width:60%;
 }
 
 #otherarea #footer {
@@ -843,6 +888,22 @@ color:white;
   #otherarea #projects #quote
   {
     display:none;
+  }
+
+  #otherarea #fav
+  {
+  grid-template-columns:1fr;
+  }
+
+  #otherarea #connect #connecttitle
+  {
+    margin:auto;
+  }
+
+  #otherarea #connect #connectcard
+  {
+    height:70%;
+    width:80%;
   }
 
 }
