@@ -611,11 +611,8 @@ color:white;
   border-radius:10px;
   box-sizing: border-box;
   padding:20px;
-  font-size:1.2rem;
   background-color:var(--main-color-dark);
   width:100%;
-  height:200px;
-  text-align:center;
   color:white;
 }
 
@@ -623,6 +620,35 @@ color:white;
 {
   color:var(--main-color-dark);
   background-color:#D1F2EB;
+}
+
+#otherarea #fav .favsection .favtitle
+{
+  font-size:1.3rem;
+  color:var(--main-color);
+  padding-bottom:8px;
+  border-bottom:1px solid white;
+}
+
+#otherarea #fav .favsection .favItem
+{
+  margin:20px 0;
+  font-size:1.2rem;
+}
+
+
+#otherarea #fav .favsection .favItem .itemdesc::before
+{
+  content:'';
+  margin-left:30px;
+}
+
+#otherarea #fav .favsection .favItem .itemdesc
+{
+  margin-top:2.5px;
+  display:block;
+  font-style:italic;
+  font-size:1rem;
 }
 
 #otherarea #footer {
