@@ -1,5 +1,6 @@
 import React from 'react';
 import Article from './Article'
+import Linkcard from './Linkcard'
 
 const Extras = () => {
     return(
@@ -36,6 +37,10 @@ const Extras = () => {
             </div>
 
             <div id="extraslinks">
+                <div id="titleholder">Links to my extras</div>
+                <Linkcard name="Blog" src="./wordpress.png" url="https://indrajitmusic.wordpress.com/"/>
+                <Linkcard name="Articles" src="./Medium.png" url="https://medium.com/@indrajitvijayakumar" />
+                <Linkcard name="Songs" src="./youtube.png" url="https://www.youtube.com/channel/UCvd_7o_qpO2VC6HPn7Huh_w?view_as=subscriber"/>
                 
             </div>
             </div>

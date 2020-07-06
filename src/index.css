@@ -5,8 +5,6 @@
 {
   --main-color:#76D7C4;
   --main-color-dark:#2E4053;
-  --text-colorb:black;
-  --text-colorw:white;
 }
 
 html
@@ -133,7 +131,7 @@ code {
   /* text-align: center; */
   width:90%;
   font-size:1.7rem;
-  margin:40px 0 20px 0;
+  margin:60px 0 20px 0;
   padding-bottom:10px;
   border-bottom:1px solid var(--main-color);
 }
@@ -267,7 +265,7 @@ code {
 {
   border-radius:10px;
   background-color:var(--main-color-dark);
-  color:var(--text-colorw);
+  color:white;
   width:90%;
   padding:20px;
   box-sizing: border-box;
@@ -354,17 +352,63 @@ code {
 
 #otherarea #extras #right #extraslinks
 {
-  margin-top:10px;
+  color:black;
+  margin-top:1rem;
   box-sizing:border-box;
   padding:20px;
   border-radius:10px; 
-  background-color:var(--main-color);
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:1rem 1rem;
+}
+
+#otherarea #extras #right #extraslinks #titleholder 
+{
+padding:20px;
+text-align:center;
+font-size:1.3rem;
+display:flex;
+align-items:center;
+justify-content:center;
+background-color:var(--main-color);
+color:white;
+}
+
+#otherarea #extras #right #extraslinks .linkcard
+{
+  font-size:1.2rem;
+  border-radius:10px; 
+  background-color:white;
+  border:2px solid var(--main-color);
+  color:black;
+  padding:20px;
+  height:80px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  transition:all 0.2s ease-in-out;
+}
+
+#otherarea #extras #right #extraslinks .linkcard:hover
+{
+  border:2px solid white;
   -webkit-box-shadow: 0 3px 8px -2px #2E4053;
   -moz-box-shadow: 0 3px 8px -2px #2E4053;
   box-shadow: 0 3px 8px -2px #2E4053;
-  height:250px;
 }
 
+#otherarea #extras #right #extraslinks .linkcard img
+{
+  height:60px;
+}
+
+#otherarea #extras #right #extraslinks .linkcard .caption
+{
+  font-style:italic;
+  margin-top:10px;
+}
 
 #otherarea #extras #articlebox
 {
@@ -382,7 +426,6 @@ code {
 
 #otherarea #extras #articlebox #articlegrid
 {
-  font-size:1rem;
   margin:20px 0;
   display:grid;
   align-items:center;
@@ -418,6 +461,7 @@ code {
 
 #otherarea #extras #articlebox #articlegrid .article .link
 {
+  font-size:1rem;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -435,6 +479,108 @@ code {
 {
   background-color:var(--main-color);
   color:white;
+}
+
+#otherarea #projects
+{
+  display:grid;
+  align-items: start;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:2rem 2rem;
+  width:85%;
+}
+
+#otherarea #projects #quote
+{
+  align-self:end;
+  border-radius:10px;
+  background-color:var(--main-color-dark);
+  color:white;
+  font-style:italic;
+  box-sizing: border-box;
+  padding:20px;
+  font-size:1.3rem;
+  width:100%;
+  display:flex;
+  text-align:center;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  height:100%;
+  -webkit-box-shadow: 0 3px 8px -2px #2E4053;
+  -moz-box-shadow: 0 3px 8px -2px #2E4053;
+  box-shadow: 0 3px 8px -2px #2E4053;
+}
+
+#otherarea #projects #quote #saidby
+{
+  color:var(--main-color);
+  margin-top:10px;
+}
+
+#otherarea #projects .projectcard
+{
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  justify-content:center;
+  padding:0 20px;
+}
+
+#otherarea #projects .projectcard .projectlogo
+{
+  height:80px;
+  padding:10px;
+  border-radius:10px;
+  position: relative;
+  top:50px;
+  background-color:white;
+  -webkit-box-shadow: 0 3px 8px -2px #2E4053;
+  -moz-box-shadow: 0 3px 8px -2px #2E4053;
+  box-shadow: 0 3px 8px -2px #2E4053;
+}
+
+#otherarea #projects .projectcard .content
+{
+  border:2px solid var(--main-color);
+  border-radius:10px;
+  background-color: white;
+  padding:20px;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+
+#otherarea #projects .projectcard .content .projtitle
+{
+  font-size:1.3rem;
+  margin:50px auto 20px auto;
+  display:block;
+  color:var(--main-color);
+  padding-bottom:5px;
+  border-bottom:1px solid var(--main-color);
+}
+
+#otherarea #projects .projectcard .content .projdesc
+{
+  text-align:center;
+  font-size:1.1rem;
+  width:100%;
+  line-height:2rem;
+}
+
+#otherarea #projects .projectcard .content .techused
+{
+  line-height:2rem;
+  font-size:1.1rem;
+  margin-top:15px;
+  padding:20px;
+  width:90%;
+  background-color:var(--main-color);
+  color:white;
+  text-align:center;
 }
 
 #otherarea #footer {
@@ -504,12 +650,6 @@ code {
   {
   grid-row: 3 / 4;
   }
-
-  #otherarea #extras #extraslinks
-  {
-  height:150px;
-  }
-
 }
 
 @media screen and (max-width:1200px)
@@ -552,24 +692,31 @@ code {
 
 @media screen and (max-width:769px)
 {
-  #otherarea .label
+  code,#otherarea .label
   {
     font-size:1.4rem;
   }
 
+
   .main #socialcards .card-social
   {
     margin:0 5px;
-    height:30px;
-    width:30px;
+    height:32px;
+    width:32px;
   }
+
+  .main #socialcards .card-social img
+  {
+    height:28px;
+  }
+
 
   #otherarea #about #main-content .content,#otherarea #extras #right #quotebox
   {
   font-size:1.2rem;
   }
 
-  #otherarea #about #mygrid #mypic
+  #otherarea #about #mygrid #mypic,#otherarea #about #mygrid #mymusic
   {
   width:100%;
   }
@@ -578,17 +725,6 @@ code {
   {
   height:405px;
   margin-bottom:20px;
-  }
-
-  #otherarea #about #mygrid #mypic img
-  {
-  height:405px;
-  margin-bottom:20px;
-  }
-
-  #otherarea #about #mygrid #mymusic
-  {
-  width:100%;
   }
 
   #otherarea #about #mygrid #mymusic #musicgrid
@@ -620,16 +756,33 @@ code {
   } 
 
   
-  #otherarea #extras #articlebox,#otherarea #extras #articlebox #articlegrid .article .articlecontent
+  #otherarea #extras #articlebox,#otherarea #extras #articlebox #articlegrid .article .articlecontent,#otherarea #extras #right #extraslinks .linkcard
   {
   font-size:1.1rem;
   }
+
+  #otherarea #extras #right #extraslinks #titleholder
+  {
+  font-size:1.2rem;
+  }
+
+  #otherarea #projects
+  {
+  grid-template-columns: 1fr;
+  grid-gap:0.5rem 0.5rem;
+  }
+
+  #otherarea #projects #quote
+  {
+    display:none;
+  }
+
 }
 
 @media screen and (max-width:575px)
 {
   code {
-    font-size:1.4rem;
+    font-size:1.3rem;
   }
 
   #otherarea #about #main-content
@@ -661,6 +814,12 @@ code {
 
 @media screen and (max-width:475px)
 {
+  #otherarea #about #main-content .content,#otherarea #about #mygrid #mypic,#otherarea #about #mygrid #mymusic
+  {
+  font-size:1.1rem;
+  }
+
+
   #otherarea #about #mygrid #mypic img
   {
   height:255px;
@@ -672,7 +831,7 @@ code {
   width:14.5rem;
   }
 
-  #otherarea #extras #articlebox,#otherarea #extras #articlebox #articlegrid .article .articlecontent
+  #otherarea #extras #articlebox #articlegrid .article .articlecontent
   {
   font-size:1rem;
   }
@@ -680,5 +839,10 @@ code {
   #otherarea #extras #articlebox #articlegrid .article .title
   {
   font-size:1.1rem;
+  }
+
+  #otherarea #projects .projectcard .content .projtitle
+  {
+  font-size:1.2rem;
   }
 }
