@@ -598,6 +598,14 @@ color:white;
   line-height:2rem;
 }
 
+#otherarea #projects .projectcard .content .projlink
+{
+  display:block;
+  text-align:center;
+  color:var(--main-color);
+  margin:8px 0;
+}
+
 #otherarea #projects .projectcard .content .techused
 {
   line-height:2rem;
@@ -1053,6 +1061,11 @@ color:white;
   #otherarea #projects .projectcard .content .projtitle
   {
   font-size:1.2rem;
+  }
+
+  #otherarea #projects .projectcard .content .projdesc
+  {
+  text-align:justify;
   }
   
   #otherarea #connect #connectcard

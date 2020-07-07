@@ -1,12 +1,22 @@
 import React from 'react';
 
 const ProjectCard = (props) => {
+
+    let link = null;
+
+    if (props.projlink)
+    {
+    link = <a class="projlink" href={props.projlink} target="_blank" rel="noopener noreferrer">Check out the demo!</a>
+    }
+
     return(
         <div className="projectcard">
             <img className="projectlogo" src={require(`${props.image}`)} alt="project_logo"></img>
             <div className="content">
                 <span className="projtitle">{props.name}</span>
-                <span className="projdesc">{props.desc}</span>
+                <span className="projdesc">{props.desc}
+                {link}
+                </span>
                 <div className="techused">Technologies used : {props.tech}</div>
             </div>
         </div>
