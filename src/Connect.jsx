@@ -13,7 +13,7 @@ const Connect = () => {
                 </div>
 
                 <p id="email">
-                <span style={{color:"#76D7C4",marginBottom:"5px"}}>Email📧</span>
+                <span style={{color:"#76D7C4",marginBottom:"5px"}}>Email</span>
                 indrajitvijayakumar@gmail.com
                 </p>
         </div>
