@@ -21,6 +21,8 @@ body {
 }
 
 code {
+  opacity:0;
+  transform:translateY(-2rem);
   border-radius:10px;
   font-family: 'Roboto Mono', monospace;
   font-size:1.5rem;
@@ -28,6 +30,7 @@ code {
   background-color:black;
   padding:20px;
   color:white;
+  animation:slide-down 0.5s 0.25s cubic-bezier(.08,.5,.66,1) forwards;
 }
 
 .tag
@@ -52,6 +55,9 @@ code {
   background-position: center;
   background-size:cover;
   overflow: hidden;
+  transform:translateY(-4rem);
+  opacity:0;
+  animation:slide-down 0.5s cubic-bezier(.08,.5,.66,1) forwards;
 }
 
 .main #india
@@ -64,6 +70,8 @@ code {
 
 .main #socialcards
 {
+  opacity:0;
+  transform:translateY(-2rem);
   border-radius:10px;
   background-color:var(--main-color);
   margin-top:10px;
@@ -71,11 +79,21 @@ code {
   width:fit-content;
   display:flex;
   align-items: center;
-  justify-content:space-evenly; 
+  justify-content:space-evenly;
+  animation:slide-down 0.5s 0.25s cubic-bezier(.08,.5,.66,1) forwards;
+}
+
+@keyframes slide-down
+{
+  100%
+  {
+    opacity:1;
+    transform:translateX(0);
+  }
 }
 
 
-.main #socialcards .card-social
+.main #socialcards .card-social,#otherarea #connect #connectcard #connectcardholder .card-social
 {
   border-radius:50%;
   margin:0 7.5px;
@@ -94,12 +112,12 @@ code {
   transition:0.2s all ease-in-out;
 }
 
-.main #socialcards .card-social:hover
+.main #socialcards .card-social:hover,#otherarea #connect #connectcard #connectcardholder .card-social:hover
 {
   transform:scale(1.2);
 }
 
-.main #socialcards .card-social img
+.main #socialcards .card-social img,#otherarea #connect #connectcard #connectcardholder .card-social img
 {
   height:30px;
 }
@@ -627,7 +645,7 @@ color:white;
 
 #otherarea #fav .favsection .favItem
 {
-  margin:20px 0;
+  margin:25px 0;
 }
 
 #otherarea #fav .favsection .favItem .itemtitle
@@ -637,10 +655,9 @@ color:white;
   font-size:1.2rem;
 }
 
-#otherarea #fav .favsection .favItem .itemdesc
+#otherarea #fav .favsection .favItem .itemtitle .itemdesc
 {
   margin-top:2.5px;
-  margin-left:30px;
   display:block;
   font-style:italic;
   font-size:1rem;
@@ -653,7 +670,6 @@ color:white;
   url("https://images.pexels.com/photos/373076/pexels-photo-373076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   box-sizing: border-box;
   margin-top:50px;
-  height:100vh;
   color:white;
   background-size:cover;
   background-attachment: fixed;
@@ -670,7 +686,7 @@ color:white;
   margin:20px auto 0 20px;
   font-size: 1.6rem;
   font-style:italic;
-  padding:20px;
+  padding:15px;
   background-color:var(--main-color);
   color:white;
   width:fit-content;
@@ -682,19 +698,40 @@ color:white;
 
 #otherarea #connect #connectcard
 {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   font-size:1.2rem;
   text-align:center;
   border-radius:10px;
   background-color:white;
   color:black;
-  padding:20px;
+  padding:15px;
   -webkit-box-shadow: 0 3px 8px -2px #2E4053;
   -moz-box-shadow: 0 3px 8px -2px #2E4053;
   box-shadow: 0 3px 8px -2px #2E4053;
-  margin:auto;
-  height:60%;
-  width:60%;
+  margin:25px auto;
+  width:50%;
+}
+
+#otherarea #connect #connectcard #connectcardholder
+{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding:5px;
+  margin:5px 0;
+}
+
+#otherarea #connect #connectcard #email
+{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  border-radius:10px;
 }
 
 #otherarea #footer {
@@ -812,14 +849,14 @@ color:white;
   }
 
 
-  .main #socialcards .card-social
+  .main #socialcards .card-social,#otherarea #connect #connectcard #connectcardholder .card-social
   {
     margin:0 5px;
     height:32px;
     width:32px;
   }
 
-  .main #socialcards .card-social img
+  .main #socialcards .card-social img,#otherarea #connect #connectcard #connectcardholder .card-social img
   {
     height:28px;
   }
@@ -919,36 +956,35 @@ color:white;
   {
     font-size:1.5rem;
     margin:auto;
+    margin-top:10px;
   }
 
   #otherarea #connect #connectcard
   {
     font-size:1.1rem;
-    height:60%;
-    width:90%;
+    width:80%;
   }
 
   #otherarea #fav .favsection .favtitle
   {
     font-size:1.2rem;
   }
-
-  #otherarea #fav .favsection .favItem
-  {
-    margin:25px 0;
-  }
-
   
   #otherarea #fav .favsection .favItem .itemtitle
   {
    font-size:1.1rem;
   }
 
-  #otherarea #fav .favsection .favItem .itemdesc
+  #otherarea #fav .favsection .favItem .itemtitle .itemdesc
   {
    font-size:1rem;
   }
 
+  #otherarea #connect #connectcard
+  {
+    font-size:1.1rem;
+    width:80%;
+  }
 
 }
 
@@ -1017,5 +1053,17 @@ color:white;
   #otherarea #projects .projectcard .content .projtitle
   {
   font-size:1.2rem;
+  }
+  
+  #otherarea #connect #connectcard
+  {
+    font-size:1rem;
+    width:100%;
+  }
+
+  #otherarea #connect #connectcard #email
+  {
+    border:none;
+    padding:0;
   }
 }

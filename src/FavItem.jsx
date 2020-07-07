@@ -5,10 +5,13 @@ const FavItem = (props) => {
         <div className="favItem">
             
             <div className="itemtitle">
-                <span style={{marginRight:"5px"}}>{props.heart}</span>{props.title}
+                <span style={{fontSize:"1rem",marginRight:"5px",marginTop:"1px"}}>{props.heart}</span>
+                <span>
+                {props.title}
+                <div className="itemdesc" style={{color:props.colour}}>{props.desc}</div>
+                </span>
             </div>
             
-            <div className="itemdesc" style={{color:props.colour}}>{props.desc}</div>
         </div>
     )
 }
