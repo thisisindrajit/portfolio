@@ -5,9 +5,9 @@ const MainComponent = () => {
         return(
             <div className="main">
                 
-                <code><div className="tag">{"<span id='hello'>"}</div> {" Hello! I am "}<u>Indrajit</u>{", a "}<span className="highlight">full stack web developer</span>{" and a "}
+                <h1><div className="tag">{"<span id='hello'>"}</div> {" Hello! I am "}<u>Indrajit</u>{", a "}<span className="highlight">full stack web developer</span>{" and a "}
                 <span className="highlight">Machine Learning enthusiast</span>{" from "} <span id="india">
-                    India! </span><div className="tag">{"</span>"}</div></code>
+                    India! </span><div className="tag">{"</span>"}</div></h1>
 
                 <div id="socialcards">
                 <SocialCard src="./linkedin.png" url="https://www.linkedin.com/in/indrajit-vijayakumar-6b761869"/>
