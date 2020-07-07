@@ -38,7 +38,7 @@ body {
   overflow: hidden;
   transform:translateY(-4rem);
   opacity:0;
-  animation:slide-down 0.5s cubic-bezier(.08,.5,.66,1) forwards;
+  animation:slide-down 0.5s 0.5s cubic-bezier(.08,.5,.66,1) forwards;
 }
 
 h1 {
@@ -52,7 +52,7 @@ h1 {
   background-color:black;
   padding:20px;
   color:white;
-  animation:slide-down 0.5s 0.25s cubic-bezier(.08,.5,.66,1) forwards;
+  animation:slide-down 0.5s 0.75s cubic-bezier(.08,.5,.66,1) forwards;
 }
 
 .tag
@@ -80,7 +80,7 @@ h1 {
   display:flex;
   align-items: center;
   justify-content:space-evenly;
-  animation:slide-down 0.5s 0.25s cubic-bezier(.08,.5,.66,1) forwards;
+  animation:slide-down 0.5s 0.75s cubic-bezier(.08,.5,.66,1) forwards;
 }
 
 @keyframes slide-down
