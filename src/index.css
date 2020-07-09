@@ -12,6 +12,12 @@ html
   scroll-behavior: smooth;
 }
 
+.js-loading *,   /*here * means wildcard which literally refers to every element. So here for every element the animation will be paused until this class is removed*/
+.js-loading *::before,
+.js-loading *::after
+{
+  animation-play-state: paused !important;
+}
 
 body {
   margin: 0;
@@ -44,7 +50,7 @@ body {
 h1 {
   font-weight:normal;
   opacity:0;
-  transform:translateY(-2rem);
+  transform:translateY(-2rem) scale(0.8);
   border-radius:10px;
   font-family: 'Roboto Mono', monospace;
   font-size:1.5rem;
@@ -72,7 +78,7 @@ h1 {
 .main #socialcards
 {
   opacity:0;
-  transform:translateY(-2rem);
+  transform:translateY(-2rem) scale(0.8);
   border-radius:10px;
   background-color:var(--main-color);
   padding:15px 10px;
@@ -88,13 +94,14 @@ h1 {
   100%
   {
     opacity:1;
-    transform:translateX(0);
+    transform:none;
   }
 }
 
 
 .main #socialcards .card-social,#otherarea #connect #connectcard #connectcardholder .card-social
 {
+  position:relative;
   border-radius:50%;
   margin:0 7.5px;
   display:block;
@@ -115,6 +122,29 @@ h1 {
 .main #socialcards .card-social:hover,#otherarea #connect #connectcard #connectcardholder .card-social:hover
 {
   transform:scale(1.2);
+}
+
+.main #socialcards .card-social::after
+{
+  opacity:0;
+  content:attr(data);
+  cursor:default;
+  font-size:0.9rem;
+  position:absolute;
+  padding:10px;
+  border-radius:5px;
+  bottom:65px;
+  z-index:10;
+  -webkit-box-shadow: 0 3px 8px -2px #2E4053;
+  -moz-box-shadow: 0 3px 8px -2px #2E4053;
+  box-shadow: 0 3px 8px -2px #2E4053;
+  background-color:white;
+  transition:opacity 0.2s ease-in-out;
+}
+
+.main #socialcards .card-social:hover::after
+{
+  opacity:1;
 }
 
 .main #socialcards .card-social img,#otherarea #connect #connectcard #connectcardholder .card-social img
