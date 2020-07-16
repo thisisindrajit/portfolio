@@ -53,7 +53,7 @@ h1 {
   transform:translateY(-2rem) scale(0.8);
   border-radius:10px;
   font-family: 'Roboto Mono', monospace;
-  font-size:1.5rem;
+  font-size:1.3rem;
   text-align:center;
   background-color:black;
   padding:20px;
@@ -81,7 +81,7 @@ h1 {
   transform:translateY(-2rem) scale(0.8);
   border-radius:10px;
   background-color:var(--main-color);
-  padding:15px 10px;
+  padding:15px 5px;
   width:fit-content;
   display:flex;
   align-items: center;
@@ -106,8 +106,8 @@ h1 {
   margin:0 7.5px;
   display:block;
   padding:10px;
-  height:40px;
-  width:40px;
+  height:35px;
+  width:35px;
   background-color:white;
   display:flex;
   align-items: center;
@@ -149,7 +149,7 @@ h1 {
 
 .main #socialcards .card-social img,#otherarea #connect #connectcard #connectcardholder .card-social img
 {
-  height:30px;
+  height:28px;
 }
 
 .highlight
@@ -172,7 +172,7 @@ h1 {
 #otherarea .label {
   /* text-align: center; */
   width:90%;
-  font-size:1.7rem;
+  font-size:1.6rem;
   margin:60px 0 20px 0;
   padding-bottom:10px;
   border-bottom:1px solid var(--main-color);
@@ -219,7 +219,7 @@ h1 {
 #otherarea #about #main-content .content
 {
   background-color:white;
-  font-size:1.3rem;
+  font-size:1.2rem;
   border-radius:10px;
   text-align:justify;
   display:inline-block;
@@ -253,7 +253,7 @@ h1 {
   width:fit-content;
   padding-bottom:20px;
   overflow:hidden;
-  font-size:1.3rem;
+  font-size:1.2rem;
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -272,7 +272,7 @@ h1 {
 #otherarea #about #mygrid #mymusic
 {
   box-sizing: border-box;
-  font-size:1.3rem;
+  font-size:1.2rem;
   padding:20px;
   border-radius:10px;
   background-color:var(--main-color);
@@ -309,7 +309,7 @@ h1 {
   background-color:var(--main-color-dark);
   color:white;
   width:90%;
-  padding:20px;
+  padding:25px;
   box-sizing: border-box;
   -webkit-box-shadow: 0 3px 8px -2px #2E4053;
   -moz-box-shadow: 0 3px 8px -2px #2E4053;
@@ -319,7 +319,7 @@ h1 {
 #otherarea #skills .skill-tag
 {
   text-decoration: underline;
-  font-size:1.4rem;
+  font-size:1.3rem;
   color:var(--main-color);
   margin-bottom:20px;
 }
@@ -328,7 +328,7 @@ h1 {
 {
   width:80%;
   margin:25px auto;
-  font-size:1.2rem;
+  font-size:1.1rem;
 }
 
 #otherarea #skills .skillitem .skillpercentage
@@ -376,7 +376,7 @@ h1 {
   -moz-box-shadow: 0 3px 8px -2px #2E4053;
   box-shadow: 0 3px 8px -2px #2E4053;
   height:fit-content;
-  font-size:1.3rem;
+  font-size:1.2rem;
   color:white;
   font-style:italic;
   display:flex;
@@ -408,7 +408,7 @@ h1 {
 {
 padding:20px;
 text-align:center;
-font-size:1.3rem;
+font-size:1.2rem;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -556,7 +556,7 @@ color:white;
   font-style:italic;
   box-sizing: border-box;
   padding:20px;
-  font-size:1.3rem;
+  font-size:1.2rem;
   width:100%;
   display:flex;
   text-align:center;
@@ -612,7 +612,7 @@ color:white;
 
 #otherarea #projects .projectcard .content .projtitle
 {
-  font-size:1.3rem;
+  font-size:1.2rem;
   margin:50px auto 20px auto;
   display:block;
   color:var(--main-color);
@@ -641,8 +641,8 @@ color:white;
   line-height:2rem;
   font-size:1.1rem;
   margin-top:15px;
-  padding:20px;
-  width:90%;
+  padding:15px;
+  width:95%;
   background-color:var(--main-color);
   color:white;
   text-align:center;
@@ -660,7 +660,7 @@ color:white;
 {
   border-radius:10px;
   box-sizing: border-box;
-  padding:20px;
+  padding:20px 25px;
   background-color:var(--main-color-dark);
   width:100%;
   color:white;
@@ -675,7 +675,7 @@ color:white;
 
 #otherarea #fav .favsection .favtitle
 {
-  font-size:1.3rem;
+  font-size:1.2rem;
   color:var(--main-color);
   padding-bottom:8px;
   border-bottom:1px solid white;
@@ -690,7 +690,7 @@ color:white;
 {
   display:flex;
   align-items: flex-start;
-  font-size:1.2rem;
+  font-size:1.1rem;
 }
 
 #otherarea #fav .favsection .favItem .itemtitle .itemdesc
@@ -722,7 +722,7 @@ color:white;
 #otherarea #connect #connecttitle
 {
   margin:20px auto 0 20px;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-style:italic;
   padding:15px;
   background-color:var(--main-color);
@@ -781,7 +781,8 @@ color:white;
   justify-content:center;
   text-align:center;
   padding:20px;
-  font-size:1.2rem;
+  font-size:1.1rem;
+  background-color: #eee;
 }
 
 #otherarea #footer span
@@ -926,11 +927,6 @@ color:white;
   {
   height:15rem;
   width:25rem;
-  }
-
-  #otherarea #skills .skill-tag
-  {
-  font-size:1.3rem;
   }
 
   #otherarea #skills .skillitem
