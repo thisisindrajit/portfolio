@@ -8,6 +8,7 @@ const Projects = () => {
             desc="Axel is a web app to connect startups and mentors. It is a platform where
             startups and mentors can connect seamlessly, startups can get insights from highly
             experienced people in the industry and mentors can fulfill their passion to guide startups."
+            projlink="http://thisisaxel.000webhostapp.com/"
             tech="HTML, CSS, PHP, MySQL"/>
             <ProjectCard name="Rustom" image="./rustom.png"
             desc="Rustom is a car dealership website which can be used to buy and sell

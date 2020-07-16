@@ -5,6 +5,7 @@ import Skills from './Skills';
 import Projects from './Projects';
 import Extras from './Extras';
 import Favourites from './Favourites';
+import Connect from './Connect'
 
 const OtherArea = () => {
         return(
@@ -19,6 +20,7 @@ const OtherArea = () => {
                 <Extras />
                 <span className="label">Favourites</span>
                 <Favourites />
+                <Connect />
                 <Footer />
             </div>
         )

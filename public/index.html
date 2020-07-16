@@ -47,5 +47,15 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      document.body.className += " js-loading"; //adding a new class
+
+      window.addEventListener("load",startAnimation,false);
+
+      function startAnimation() {
+        document.body.className = document.body.className.replace("js-loading","");
+      }
+
+    </script>
   </body>
 </html>

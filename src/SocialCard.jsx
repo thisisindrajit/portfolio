@@ -8,7 +8,7 @@ function gotopage(url)
 const SocialCard = (props) => {
 
     return(
-        <div className="card-social" onClick={() => gotopage(props.url)}>
+        <div className="card-social" data={props.data} onClick={() => gotopage(props.url)}>
             <img src={require(`${props.src}`)} alt="logo"></img>
         </div>
     );
