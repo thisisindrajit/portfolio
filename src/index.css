@@ -50,6 +50,8 @@ body {
 h1 {
   font-weight:normal;
   opacity:0;
+  width:fit-content;
+  max-width:90%;
   transform:translateY(-2rem) scale(0.8);
   border-radius:10px;
   font-family: 'Roboto Mono', monospace;
@@ -903,7 +905,7 @@ color:white;
 
   #otherarea #about #main-content .content,#otherarea #extras #right #quotebox
   {
-  font-size:1.2rem;
+  font-size:1.1rem;
   }
 
   #otherarea #about #mygrid #mypic,#otherarea #about #mygrid #mymusic
@@ -929,10 +931,15 @@ color:white;
   width:25rem;
   }
 
+  #otherarea #skills .skill-tag
+  {
+  font-size:1.2rem;
+  }
+
   #otherarea #skills .skillitem
   {
   width:90%;
-  font-size:1.1rem;
+  font-size:1rem;
   }
 
   #otherarea #footer #footer-down
@@ -967,7 +974,7 @@ color:white;
 
   #otherarea #extras #right #extraslinks #titleholder
   {
-  font-size:1.2rem;
+  font-size:1.1rem;
   }
 
   #otherarea #projects
@@ -988,7 +995,7 @@ color:white;
 
   #otherarea #connect #connecttitle
   {
-    font-size:1.5rem;
+    font-size:1.3rem;
     margin:auto;
     margin-top:10px;
   }
@@ -1025,7 +1032,19 @@ color:white;
 @media screen and (max-width:575px)
 {
   h1 {
-    font-size:1.3rem;
+    font-size:1.2rem;
+  }
+
+  .main #socialcards .card-social,#otherarea #connect #connectcard #connectcardholder .card-social
+  {
+    padding:8px;
+    height:30px;
+    width:30px;
+  }
+
+  .main #socialcards .card-social img,#otherarea #connect #connectcard #connectcardholder .card-social img
+  {
+    height:25px;
   }
 
   #otherarea #about #main-content
@@ -1057,6 +1076,11 @@ color:white;
 
 @media screen and (max-width:475px)
 {
+  h1
+  {
+  font-size:1.1rem;
+  }
+
   #otherarea #about #main-content .content,#otherarea #about #mygrid #mypic,#otherarea #about #mygrid #mymusic
   {
   font-size:1.1rem;
@@ -1074,24 +1098,24 @@ color:white;
   width:14.5rem;
   }
 
-  #otherarea #extras #articlebox #articlegrid .article .articlecontent
+  #otherarea #extras #articlebox #articlegrid .article .articlecontent,#otherarea #extras #articlebox #articlegrid .article .title
   {
   font-size:1rem;
   }
 
-  #otherarea #extras #articlebox #articlegrid .article .title
+  #otherarea #projects .projectcard .content .projtitle
   {
   font-size:1.1rem;
   }
 
-  #otherarea #projects .projectcard .content .projtitle
-  {
-  font-size:1.2rem;
-  }
-
   #otherarea #projects .projectcard .content .projdesc
   {
-  text-align:justify;
+  text-align:center;
+  }
+
+  #otherarea #extras #articlebox,#otherarea #about #mygrid #mymusic
+  {
+    line-height:1.8rem;
   }
   
   #otherarea #connect #connectcard
