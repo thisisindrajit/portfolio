@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&display=swap');
 
 :root
 {
@@ -48,14 +48,14 @@ body {
 }
 
 h1 {
-  font-weight:normal;
+  font-weight: normal;
   opacity:0;
   width:fit-content;
   max-width:90%;
   transform:translateY(-2rem) scale(0.8);
   border-radius:10px;
-  font-family: 'Roboto Mono', monospace;
-  font-size:1.3rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size:1.4rem;
   text-align:center;
   background-color:black;
   padding:20px;
@@ -589,6 +589,7 @@ color:white;
 #otherarea #projects .projectcard .projectlogo
 {
   height:80px;
+  width:80px;
   padding:10px;
   border-radius:10px;
   position: relative;

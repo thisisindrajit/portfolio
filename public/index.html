@@ -34,7 +34,7 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
   </head>
-  <body>
+<body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -49,11 +49,13 @@
     -->
     <script>
       document.body.className += " js-loading"; //adding a new class
-
+      document.body.style.overflow = "hidden";
+      
       window.addEventListener("load",startAnimation,false);
 
       function startAnimation() {
         document.body.className = document.body.className.replace("js-loading","");
+        document.body.style.overflow = "visible";
       }
 
     </script>
