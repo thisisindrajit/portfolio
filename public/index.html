@@ -47,6 +47,8 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <div id="loading">Loading up my portfolio!😁</div>
+
     <script>
       document.body.className += " js-loading"; //adding a new class
       document.body.style.overflow = "hidden";
@@ -56,6 +58,8 @@
       function startAnimation() {
         document.body.className = document.body.className.replace("js-loading","");
         document.body.style.overflow = "visible";
+        var elem = document.querySelector('#loading');
+        elem.parentNode.removeChild(elem); //removing the node from the dom
       }
 
     </script>
