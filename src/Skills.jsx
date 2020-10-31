@@ -5,7 +5,7 @@ export default class Skills extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      percentage:[0,0,0,0,0]
+      percentage:[0,0,0,0,0,0,0,0,0]
     };
   }
 
@@ -23,7 +23,7 @@ export default class Skills extends Component {
             // and we do not need to do anything.
             if (entries[0].intersectionRatio <= 0) return;
         
-            this.setState({percentage: [80,60,70,50,40]})
+            this.setState({percentage: [60,75,70,60,75,80,70,40,40]})
           }, //callback
       options
     );
@@ -33,13 +33,21 @@ export default class Skills extends Component {
 
   render() {
     return (
-      <div id="skills" ref={skillsRef => (this.skillsRef = skillsRef)}>
-        <div className="tag skill-tag">My Top 5 Skills</div>
-        <Skillitem skill="CSS" percentage={this.state.percentage[0]} />
-        <Skillitem skill="HTML" percentage={this.state.percentage[1]} />
-        <Skillitem skill="JavaScript" percentage={this.state.percentage[2]} />
-        <Skillitem skill="React" percentage={this.state.percentage[3]} />
-        <Skillitem skill="PHP" percentage={this.state.percentage[4]} />
+      <div id="skills" ref={skillsRef => (this.skillsRef = skillsRef)}> 
+      {/* ref can be initialized like ref={skillsRef => (this.skillsRef = skillsRef)} also or using this.skillsRef = React.createRef() 
+        and then using it like <div id="skills" ref={this.skillsRef}. See the documentation for more information.*/}
+        <div className="tag skill-tag">Top Skills</div>
+        <Skillitem skill="C++" percentage={this.state.percentage[0]} />
+        <Skillitem skill="JavaScript🌟" percentage={this.state.percentage[1]} />
+        <Skillitem skill="Python🌟" percentage={this.state.percentage[2]} />
+        <Skillitem skill="Java" percentage={this.state.percentage[3]} />
+        <Skillitem skill="ReactJS🌟" percentage={this.state.percentage[4]} />
+        <Skillitem skill="CSS🌟" percentage={this.state.percentage[5]} />
+        <Skillitem skill="HTML" percentage={this.state.percentage[6]} />
+        <Skillitem skill="PHP" percentage={this.state.percentage[7]} />
+
+        <div className="tag skill-tag">Other Skills</div>
+        <Skillitem skill="Deep Learning" percentage={this.state.percentage[8]} />
       </div>
     );
   }
