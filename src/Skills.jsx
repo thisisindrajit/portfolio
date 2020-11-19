@@ -23,7 +23,7 @@ export default class Skills extends Component {
             // and we do not need to do anything.
             if (entries[0].intersectionRatio <= 0) return;
         
-            this.setState({percentage: [60,75,70,60,75,80,70,40,40]})
+            this.setState({percentage: [60,75,60,65,75,80,70,40,40]})
           }, //callback
       options
     );
