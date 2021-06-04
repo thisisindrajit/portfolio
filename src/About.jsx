@@ -14,7 +14,7 @@ const About = () => {
 
                     <div className="content">
                     I am Indrajit, a full stack web developer from India. I am currently pursuing BE Computer Science and Engineering in PSG College of Technology, Coimbatore.
-                    I am extremely interested in full stack web development and crazy about Artificial Intelligence🤖 and Machine Learning.
+                    I am extremely interested in full stack web development and crazy about Artificial Intelligence🤖.
                     My hobbies include reading books📚, watching movies, playing football⚽, listening to music and much more.
                     </div>
 

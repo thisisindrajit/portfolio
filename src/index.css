@@ -8,10 +8,6 @@
   --main-color-dark:#2E4053;
 }
 
-html
-{
-  scroll-behavior: smooth;
-}
 
 .js-loading *,   /*here * means wildcard which literally refers to every element. So here for every element the animation will be paused until this class is removed*/
 .js-loading *::before,
@@ -114,6 +110,25 @@ h1 {
   }
 }
 
+.main #download-cv{
+  padding:10px;
+  margin:auto;
+  font-size:1.2rem;
+  margin-top:20px;
+  width:fit-content;
+  border:2px solid var(--main-color);
+  background-color:transparent;
+  color:white;
+  text-decoration: none;
+  display:block;
+  font-family: 'Barlow', sans-serif;
+  transition:all 0.2s ease-in-out;
+}
+
+.main #download-cv:hover{
+  background-color:var(--main-color);
+  color:white;
+}
 
 .main #socialcards .card-social,#otherarea #connect #connectcard #connectcardholder .card-social
 {
@@ -132,7 +147,7 @@ h1 {
   -webkit-box-shadow: 0 3px 8px -2px #2E4053;
   -moz-box-shadow: 0 3px 8px -2px #2E4053;
   box-shadow: 0 3px 8px -2px #2E4053;
-  transition:0.2s all ease-in-out;
+  transition:all 0.2s ease-in-out;
 }
 
 .main #socialcards .card-social:hover,#otherarea #connect #connectcard #connectcardholder .card-social:hover
@@ -175,6 +190,7 @@ h1 {
 
 #otherarea
 {
+  background-color:#fdfdfd;
   box-sizing: border-box;
   position: absolute;
   width:100%;
@@ -185,7 +201,7 @@ h1 {
   padding-top:20px;
 }
 
-#otherarea .label {
+.label {
   /* text-align: center; */
   width:90%;
   font-size:1.6rem;
@@ -557,7 +573,7 @@ color:white;
 }
 
 
-#otherarea #projects
+#projects
 {
   display:grid;
   align-items: start;
@@ -566,7 +582,27 @@ color:white;
   width:85%;
 }
 
-#otherarea #projects #quote
+#allprojbut{
+  margin:50px 0 25px 0;
+  width:65vw;
+  border:2px solid var(--main-color-dark);
+  background-color:white;
+  color:var(--main-color-dark);
+  padding:15px;
+  text-align:center;
+  font-size:1.1rem;
+  border-radius:8px;
+  transition:0.2s all ease-in-out;
+}
+
+#allprojbut:hover{
+  background-color:var(--main-color-dark);
+  color:white;
+  
+}
+
+
+#projects #quote
 {
   align-self:end;
   border-radius:10px;
@@ -588,13 +624,13 @@ color:white;
   box-shadow: 0 3px 8px -2px #2E4053;
 }
 
-#otherarea #projects #quote #saidby
+#projects #quote #saidby
 {
   color:var(--main-color);
   margin-top:10px;
 }
 
-#otherarea #projects .projectcard
+#projects .projectcard
 {
   display:flex;
   align-items:center;
@@ -603,7 +639,7 @@ color:white;
   padding:0 20px;
 }
 
-#otherarea #projects .projectcard .projectlogo
+#projects .projectcard .projectlogo
 {
   height:80px;
   width:80px;
@@ -617,7 +653,7 @@ color:white;
   box-shadow: 0 3px 8px -2px #2E4053;
 }
 
-#otherarea #projects .projectcard .content
+#projects .projectcard .content
 {
   border:2px solid var(--main-color);
   border-radius:10px;
@@ -630,7 +666,7 @@ color:white;
   justify-content:center;
 }
 
-#otherarea #projects .projectcard .content .projtitle
+#projects .projectcard .content .projtitle
 {
   font-size:1.2rem;
   margin:50px auto 20px auto;
@@ -640,7 +676,7 @@ color:white;
   border-bottom:1px solid var(--main-color);
 }
 
-#otherarea #projects .projectcard .content .projdesc
+#projects .projectcard .content .projdesc
 {
   text-align:center;
   font-size:1.1rem;
@@ -648,7 +684,7 @@ color:white;
   line-height:2rem;
 }
 
-#otherarea #projects .projectcard .content .projlink
+#projects .projectcard .content .projlink
 {
   display:block;
   text-align:center;
@@ -656,7 +692,7 @@ color:white;
   margin:8px 0;
 }
 
-#otherarea #projects .projectcard .content .techused
+#projects .projectcard .content .techused
 {
   line-height:2rem;
   font-size:1.1rem;
@@ -902,7 +938,7 @@ color:white;
 
 @media screen and (max-width:769px)
 {
-  #otherarea .label
+  .label
   {
     font-size:1.4rem;
   }
@@ -995,13 +1031,13 @@ color:white;
   font-size:1.1rem;
   }
 
-  #otherarea #projects
+  #projects
   {
   grid-template-columns: 1fr;
   grid-gap:0.5rem 0.5rem;
   }
 
-  #otherarea #projects #quote
+  #projects #quote
   {
     display:none;
   }
@@ -1117,12 +1153,12 @@ color:white;
   font-size:1rem;
   }
 
-  #otherarea #projects .projectcard .content .projtitle
+  #projects .projectcard .content .projtitle
   {
   font-size:1.1rem;
   }
 
-  #otherarea #projects .projectcard .content .projdesc
+  #projects .projectcard .content .projdesc
   {
   text-align:center;
   }

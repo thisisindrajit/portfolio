@@ -1,13 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import MainComponent from './MainComponent';
-import OtherArea from './OtherArea';
+import Routes from './Routes';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <MainComponent />
-    <OtherArea />
-  </React.StrictMode>,
+    <Routes />,
   document.getElementById('root')
 );

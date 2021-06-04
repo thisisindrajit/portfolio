@@ -15,7 +15,7 @@ const OtherArea = () => {
                 <span className="label">Skills</span>
                 <Skills />
                 <span className="label">Projects</span>
-                <Projects />
+                <Projects isallproj="false" />
                 <span className="label">Extras</span>
                 <Extras />
                 <span className="label">Favourites</span>
