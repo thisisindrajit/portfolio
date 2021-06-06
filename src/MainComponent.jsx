@@ -5,7 +5,7 @@ const MainComponent = () => {
   return (
     <div className="main">
       <h1>
-        <div className="tag">{"<span id='hello'>"}</div> {" Hello! I am "}
+        <div className="tag">{"<span id=\"hello\">"}</div> {" Hello! I am "}
         <u>Indrajit</u>
         {", a "}
         <span className="highlight">full stack web developer</span>

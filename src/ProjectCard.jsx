@@ -6,7 +6,7 @@ const ProjectCard = (props) => {
 
     if (props.projlink)
     {
-    link = <a className="projlink" href={props.projlink} target="_blank" rel="noopener noreferrer">Check out the project!</a>
+    link = <a className="projlink" href={props.projlink} target="_blank" rel="noopener noreferrer">{props.text}</a>
     }
 
     return(
