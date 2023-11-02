@@ -8,7 +8,7 @@ const Connect = () => {
         <div id="connectcard">
                 <div id="connectcardholder">
                 <SocialCard src="./instagram.png" url="https://www.instagram.com/thisisindrajit/"/>
-                <SocialCard src="./twitter.png" url="https://twitter.com/indrajitmusic"/>
+                <SocialCard src="./twitter.png" url="https://twitter.com/callmeindrajit"/>
                 <SocialCard src="./github.png" url="https://github.com/thisisindrajit"/>
                 </div>
 
